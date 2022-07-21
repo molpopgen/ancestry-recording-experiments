@@ -24,3 +24,6 @@ pub use node::Node;
 pub use node::NodeData;
 pub use node_heap::NodeHeap;
 pub use population::Population;
+
+pub mod indexed_node;
+pub mod indexed_population;
