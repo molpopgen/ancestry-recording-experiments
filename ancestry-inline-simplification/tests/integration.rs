@@ -104,7 +104,6 @@ fn test_simulation_round_trip_overlapping_gens() {
                     .tree_sequence(tskit::TreeSequenceFlags::BUILD_INDEXES)
                     .unwrap();
                 assert_eq!(ts.num_trees(), pts.num_trees());
-
             }
 
             //{

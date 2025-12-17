@@ -8,4 +8,4 @@ edition = "2021"
 [dependencies]
 ancestry-common = { version = "~0.1.0", path = "../ancestry-common" }
 neutral-evolution = { version = "~0.1.0", path = "../neutral-evolution" }
-tskit = "~0.9"
+tskit = "~0.14"

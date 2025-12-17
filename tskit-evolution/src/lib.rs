@@ -102,7 +102,7 @@ impl EvolvableTableCollection {
 
             // remap the alive nodes
             for alive in self.alive_nodes.iter_mut() {
-                *alive = idmap[usize::from(*alive)];
+                *alive = idmap[alive.as_usize()];
                 assert!(!alive.is_null());
             }
 
@@ -235,7 +235,7 @@ impl EvolveAncestry for EvolvableTableCollection {
             None => self.simplify_details(current_time_point, true),
         };
         for i in self.alive_nodes.iter() {
-            self.tables.nodes().flags_array_mut()[usize::from(*i)] = tskit::NodeFlags::IS_SAMPLE;
+            self.tables.nodes_mut().flags_slice_mut()[i.as_usize()] = tskit::NodeFlags::IS_SAMPLE;
         }
         rv
     }

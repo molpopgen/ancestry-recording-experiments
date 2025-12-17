@@ -215,7 +215,7 @@ impl TryFrom<Population> for tskit::TableCollection {
 
         for i in value.nodes.iter() {
             let node = node_map.get(i).unwrap();
-            tables.nodes().flags_array_mut()[usize::from(*node)] = tskit::NodeFlags::IS_SAMPLE;
+            tables.nodes_mut().flags_array_mut()[node.as_usize()] = tskit::NodeFlags::IS_SAMPLE;
         }
 
         match tables.full_sort(tskit::TableSortOptions::default()) {

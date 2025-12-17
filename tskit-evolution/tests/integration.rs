@@ -1,5 +1,4 @@
 use neutral_evolution::{evolve, Parameters};
-use tskit::TableAccess;
 use tskit_evolution::*;
 
 #[test]

@@ -2,7 +2,6 @@ use ancestry_common::{LargeSignedInteger, SignedInteger};
 use ancestry_inline_simplification::Population;
 use clap::Parser;
 use neutral_evolution::{evolve, Parameters};
-use tskit::TableAccess;
 use tskit_evolution::EvolvableTableCollection;
 
 #[derive(clap::Parser, Copy, Clone)]
