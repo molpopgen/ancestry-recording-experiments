@@ -98,7 +98,7 @@ impl Parameters {
                 "death_probability must be finite".to_string(),
             ));
         }
-        if death_probability <= 0.0 && death_probability > 1.0 {
+        if death_probability <= 0.0 || death_probability > 1.0 {
             return Err(ParameterError::BadParameter(
                 "death_probability must be 0 < d <= 1.0".to_string(),
             ));

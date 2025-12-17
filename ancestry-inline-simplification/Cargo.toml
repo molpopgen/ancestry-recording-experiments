@@ -11,7 +11,7 @@ debug = 2
 tskit-evolution = { version = "~0.1.0", path = "../tskit-evolution" }
 
 [dependencies]
-tskit = "~0.9"
+tskit = "~0.14"
 ancestry-common = { version = "~0.1.0", path = "../ancestry-common" }
 neutral-evolution = { version = "~0.1.0", path = "../neutral-evolution" }
 hashbrown = "~0.12.0"
